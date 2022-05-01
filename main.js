@@ -1,0 +1,93 @@
+/* Scroll reveal */
+window.sr = ScrollReveal();
+
+sr.reveal('.animate-left', {
+    delay: 500,
+    origin: 'left',
+    duration: 1500,
+    distance: '25rem',
+
+});
+
+sr.reveal('.animate-left-2', {
+    delay: 300,
+    origin: 'left',
+    duration: 1500,
+    distance: '25rem',
+
+});
+
+sr.reveal('.animate-left-3', {
+    delay: 400,
+    origin: 'left',
+    duration: 1500,
+    distance: '25rem',
+
+});
+
+sr.reveal('.animate-right', {
+    origin: 'right',
+    duration: 1500,
+    distance: '25rem',
+    delay: 300
+});
+
+sr.reveal('.animate-right', {
+    origin: 'right',
+    duration: 1500,
+    distance: '25rem',
+    delay: 300
+});
+
+sr.reveal('.animate-right', {
+    origin: 'right',
+    duration: 1500,
+    distance: '25rem',
+    delay: 300
+});
+
+sr.reveal('.animate-top', {
+    origin: 'top',
+    duration: 1500,
+    distance: '25rem',
+    delay: 600,
+});
+
+sr.reveal('.animate-bottom', {
+    origin: 'bottom',
+    duration: 1500,
+    distance: '25rem',
+    delay: 500,
+});
+
+sr.reveal('.animate-bottom-2', {
+    origin: 'bottom',
+    duration: 1500,
+    distance: '25rem',
+    delay: 400,
+});
+
+sr.reveal('.animate-bottom-3', {
+    origin: 'bottom',
+    duration: 1500,
+    distance: '25rem',
+    delay: 300,
+});
+
+
+// Email form
+
+function sendEmail() {
+    Email.send({
+        Host : "mail-serwer119759.lh.pl",
+        Username : "kontakt@domzpompa.pl",
+        Password : "Anakonda22!",
+        To : 'kontakt@domzpompa.pl',
+        From : document.getElementById('email').value,
+        Subject : "Nowy Kontakt z Formularza",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
+

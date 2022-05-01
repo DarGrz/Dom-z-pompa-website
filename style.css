@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+/* .border {
+    border: solid 3px red;
+} */
+
+p {
+    font-size: 1.2rem;
+}
+
+form {
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    background: url(images/couple-kitchen.jpeg);
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.nav ul {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+
+.headline-text h1 {
+    font-size: 4rem;
+}
+
+.headline-text h2 {
+    font-size: 2.5rem;
+}
+
+.headline-text h3 {
+    font-size: 1.8rem;
+}
+
+
+.txt-white {
+    color: #fff;
+}
+
+/* ZB-short */
+
+.zb-short .container {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.zb-short img {
+    max-width: 600px;
+}
+
+.zb-short p {
+    background: #fff;
+    padding: 25px;
+    margin-right: -50px;
+    z-index: 100;
+    max-width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/* ZB Baner */
+.zb-baner {
+    background: url(images/JAPAN-BW-VIEW.png) center center;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.zb-baner img {
+    max-width: 4rem;
+}
+
+.zb-baner .headline-text {
+    text-align: center;
+}
+
+.zb-baner h1 {
+    color: red;
+}
+
+.headline-text img {
+    padding: 10px ;
+}
+
+ .headline-text h1,
+ .headline-text h2,
+ .headline-text h3,
+ .headline-text h4,
+ .headline-text p {
+     padding: 10px 0;
+ }
+
+
+ /* Zb info */
+
+.zb-info .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+}
+
+.zb-info .box p{
+    padding: 10px 0;
+}
+
+.box span {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.zb-info {
+    height: 100%;
+}
+
+.info-cards {
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.card { 
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Mel cloud */
+
+.mel-box {
+    margin: 100px 25px;
+    max-width: 800px;
+    padding: 50px;
+    text-align: center;
+}
+
+.mel-box p {
+    padding: 10px;
+}
+
+.sg-ready {
+    display: flex;
+    justify-content: center;
+}
+
+.sg-ready .container {
+    margin: 50px 25px;
+    max-width: 800px;
+    padding: 50px;
+    text-align: center;
+}
+
+.sg-ready p {
+    padding: 10px;
+}
+
+.sg-ready img {
+    padding: 10px;
+}
+
+/* Fresh air */
+
+.fresh-air {
+    background: url(images/beautiful-tree-in-the-middle-of-a-field-covered-with-grass-with-the-tree-line-in-the-background.jpg) center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.fresh-air img {
+    max-width: 500px;
+}
+
+
+
+.fresh-text p,
+.fresh-text h3,
+.fresh-text h4 {
+    padding: 10px;
+}
+
+#fresh-info {
+    text-align: center;
+}
+
+.fresh-text .box div {
+    margin: 25px 0;
+}
+
+/* Know How */
+.know-how  h1 {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.know-how .box {
+    background: #000;
+    width: 100%;
+    margin: 0
+    
+}
+
+.know-how h4 {
+    padding-bottom: 25px;
+}
+
+
+
+
+/* Contact */
+
+.right-con form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Form */
+
+/* .contact {
+     background: url(images/pattern.jpg) center center;
+     background-size: cover;
+     height: 65vh;
+ } */
+
+ form {
+    display: flex;
+    flex-direction: column;
+ }
+
+#lub {
+    color: #fff;
+}
+
+form input,
+form textarea {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+form button {
+    padding: 10px;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    align-self: center;
+}
+
+
+.footer {
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+/* MediaQ */
+
+
+
+@media (max-width: 1024px) {
+    .header {
+        height: 65vh;
+    }
+}   
+
+@media (max-width: 830px) {
+    .header {
+        height: 65vh;
+    }
+
+    .headline-text {
+        margin-top: -50px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .headline-text h1 {
+        font-size: 2rem;
+    }
+    
+    .headline-text h2 {
+        font-size: 1.2rem;
+    }
+    
+    .headline-text h3 {
+        font-size: 1rem;
+    }
+
+    .info-cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        justify-content: space-around;
+        gap: 25px;
+    }
+
+    .zb-short .container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .zb-short p {
+        margin: 0;
+        margin-top: -25px;
+        text-align: center;
+        max-width: 80%;
+    }
+
+   
+
+    .card {
+       width: 70%;
+       
+    }
+
+    .bills img {
+        object-position: bottom ;
+    }
+
+    .card img {
+       object-fit: cover;
+       
+    }
+
+
+}
+
+@media (max-width: 644px) {
+    .header {
+        background-position: 65% center;
+    }
+
+    .contact .container {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+   
+
+    .header .headline-text {
+        margin-top: -55px;
+    }
+
+    .zb-short .container {
+        flex-wrap: wrap-reverse;
+        margin: 50px 0;
+        padding: 25px;
+    }
+
+    .zb-short p {
+        z-index: 100;
+        max-width: 800px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .nav a {
+        text-align: center;
+    }
+    .navbar {
+        justify-content: center;
+    }
+
+    .mel-box {
+        margin: 0;
+    }
+
+    .sg-ready .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-cards {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+       width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    
+}
+
+
+
+
+
+@media only screen and (max-height: 800px) {
+    
+}
+
+@media (max-height: 580px){
+    .headline-text h1 {
+        font-size: 1.8rem;
+    }
+    .headline-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .headline-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .header .headline-text {
+        margin-top: -55px;
+    }
+
+  
+} 
+
+@media (min-width: 886px) {
+  
+}
+
