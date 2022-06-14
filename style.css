@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +12,16 @@
 
 body {
     font-family: 'poppins', sans-serif;
+    min-width: 300px
 }
+
+
 /* .border {
     border: solid 3px red;
 } */
 
 p {
-    font-size: 1.2rem;
+    font-size: 1
 }
 
 form {
@@ -22,15 +29,29 @@ form {
 }
 
 .header {
-    background: url(images/couple-kitchen.jpeg);
+    background: url(images/small-couple-kitchen.jpg);
     background-color: rgba(0,0,0,0.6);
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 100vh;
+    transform:translatez(0);
+    -webkit-transform:translatez(0);
+    position: relative;
+    min-height: 530px;
 }
 
+.header .headline-text {
+    display: flex;
+    align-items: center;
+}
+
+.headline-text img {
+    max-width: 365px;
+    
+}
+   
 .shadow {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
@@ -42,17 +63,22 @@ img {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    align-items: center;
+    padding: 10px 25px;
     background-color: rgba(0,0,0,0.3);
+    
 }
 
 .nav ul {
-    display: inline-block;
+    display: flex;
     padding-left: 25px;
+    justify-self: flex-end;
+    align-items: center;
 }
 
 ul li {
     list-style: none;
+    padding-left: 10px;
 }
 
 ul li a {
@@ -61,8 +87,47 @@ ul li a {
 }
 
 .logo {
-    color: #fff;
+    color: #fff;;
+    max-width: 40px;
 }
+.header .container {
+    margin-top: -50px;
+    display: flex;
+}
+
+.phone-buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.phone-buttons button h3 {
+    font-size: 1.5rem;
+}
+
+
+
+#phone {
+    background: none;
+    color: #fff;
+    margin-top: 25px;
+    padding: 5px 10px;
+    border: 3px solid #666;
+    text-align: center;
+    transition: all .5s ease-in;
+    gap: 25px
+}
+
+#phone:hover {
+    border: 3px solid #fff;
+    cursor: pointer;
+    transform: scale(0.99);
+}
+
+#map {
+    max-width: 30px;
+    min-width: 20px;
+}
+
 
 .container {
     margin: 0 auto;
@@ -85,8 +150,10 @@ ul li a {
 }
 
 .headline-text h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
+
+
 
 
 .txt-white {
@@ -106,6 +173,8 @@ ul li a {
     max-width: 600px;
 }
 
+
+
 .zb-short p {
     background: #fff;
     padding: 25px;
@@ -117,7 +186,7 @@ ul li a {
 
 /* ZB Baner */
 .zb-baner {
-    background: url(images/JAPAN-BW-VIEW.png) center center;
+    background: url(images/small-JAPAN-BW-VIEW.jpg) center center;
     background-color: rgba(0,0,0,0.6);
     background-blend-mode: darken;
     background-size: cover;
@@ -128,6 +197,11 @@ ul li a {
 
 .zb-baner img {
     max-width: 4rem;
+}
+
+.zb-baner .tech-text img {
+    max-width: 400px;
+    padding-top: 25px;
 }
 
 .zb-baner .headline-text {
@@ -234,18 +308,194 @@ ul li a {
     padding: 10px;
 }
 
+/* Opinions
+
+.opinions .container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 25px;
+}
+.opinions .stars {
+    padding-top: 10px;;
+}
+
+
+
+.opinion-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opinion-card img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.opinions .stars .fa {
+    color: rgb(247, 230, 4);
+} */
+
+/* CHART */
+
+/* .chart  {
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.chart .container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
+}
+
+.chart {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+ .headline-text .text-center h2 {
+    font-size: 1.5rem;
+}
+
+.headline-text .space-b h2 {
+    font-size: 1.2rem;
+}
+
+.headline-text .space-b h3 {
+    font-size: 1.1rem;
+}
+
+.chart li {
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.bar {
+    background: #666;
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.bar span {
+    height: 30px;
+    float: left;
+    background: #444;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.green span {
+    height: 30px;
+    float: left;
+    background: rgb(11, 239, 64);
+}
+
+.orange span {
+    height: 30px;
+    float: left;
+    background: rgb(255, 217, 0);
+}
+
+.red span {
+    height: 30px;
+    float: left;
+    background: rgb(246, 9, 9);
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+.chart .space-b {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart .zubadan {
+    width: 1000%;
+    animation: zubadan 3s;
+}
+.chart .panasonic {
+    width: 75%;
+    animation: panasonic 3s;
+}
+.chart .chinese {
+    width: 50%;
+    animation: chinese 3s;
+}
+.chart .cheap {
+    width: 30%;
+    animation: cheap 3s;
+} */
+
+/* @keyframes zubadan {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes panasonic {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+@keyframes chinese {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+@keyframes cheap {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
+    }
+} */
+
+
+
+
 /* Fresh air */
 
 .fresh-air {
-    background: url(images/beautiful-tree-in-the-middle-of-a-field-covered-with-grass-with-the-tree-line-in-the-background.jpg) center center;
+    background: url(images/beautiful-tree-small.png) center center;
     background-size: cover;
-    padding: 100px 0;
 }
 
 .fresh-air img {
     max-width: 500px;
 }
 
+.fresh-text .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fresh-text p {
+    font-size: 1rem;
+}
 
 
 .fresh-text p,
@@ -260,6 +510,40 @@ ul li a {
 
 .fresh-text .box div {
     margin: 25px 0;
+}
+
+
+/* Moje ciepło */
+
+.moje-cieplo {
+    background: url(images/family-two-kids.png) bottom center;
+    background-size: cover;
+}
+
+.moje-cieplo .container {
+    width: 100%;
+    height: 65vh;
+}
+
+/* Tabela */
+
+.tab {
+    border-top: #666 solid 2px;
+    border-bottom: #666 solid 2px;
+}
+
+table  {
+    margin: 0px auto;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    
+}
+
+.table td {
+    padding: 10px 10px;
 }
 
 /* Know How */
@@ -277,13 +561,16 @@ ul li a {
     background: #000;
     width: 100%;
     margin: 0
-    
 }
 
 .know-how h4 {
     padding-bottom: 25px;
 }
 
+.know-how {
+    border-bottom: #666 2px solid;
+    margin-top: 100px;
+}
 
 
 
@@ -305,13 +592,9 @@ ul li a {
 
 /* Form */
 
-/* .contact {
-     background: url(images/pattern.jpg) center center;
-     background-size: cover;
-     height: 65vh;
- } */
 
- form {
+
+.header form {
     display: flex;
     flex-direction: column;
  }
@@ -320,14 +603,9 @@ ul li a {
     color: #fff;
 }
 
-form input,
-form textarea {
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    margin: 10px 0;
-    padding: 20px;
-}
 
-form button {
+
+.header form button {
     padding: 10px;
     background: #fff;
     outline: none;
@@ -342,6 +620,75 @@ form button {
     color: #fff;
     font-weight: 600;
     text-align: center;
+    width: 100%;
+}
+
+
+ form {
+    display: flex;
+    flex-direction: column;
+ }
+
+#lub {
+    color: #fff;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea[name="message"] {
+border-bottom: 1px #666 solid;
+}
+
+
+form button {
+    padding: 10px;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    align-self: center;
+    border: 1px solid #666;
+}
+
+#phone h2 {
+    font-size: 2rem
+}
+
+
+.footer .container {
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border-top: #666 solid 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#up-button button {
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;;
+    padding-bottom: 50px;
+}
+
+#up-button button:hover{
+    transform: scale(.95);
+    cursor: pointer;
 }
 
 
@@ -349,21 +696,41 @@ form button {
 /* MediaQ */
 
 
-
 @media (max-width: 1024px) {
     .header {
-        height: 65vh;
+        
+    }
+
+    #phone {
+        justify-self: center;
+        text-align: center;
+
+    }
+
+    .moje-cieplo .container {
+        width: 100%;
+        height: 50vh;
     }
 }   
 
 @media (max-width: 830px) {
-    .header {
-        height: 65vh;
-    }
-
     .headline-text {
         margin-top: -50px;
         text-align: center;
+    }
+
+    .header .headline-text img {
+        max-width: 300px;
+        margin-bottom: -25px;
+    }
+    
+    .moje-cieplo .container {
+        width: 100%;
+        height: 40vh;
+    }
+
+    table {
+        font-size: 12px;
     }
 
     p {
@@ -405,8 +772,6 @@ form button {
         max-width: 80%;
     }
 
-   
-
     .card {
        width: 70%;
        
@@ -421,7 +786,21 @@ form button {
        
     }
 
+    .phone-buttons button h3 {
+        font-size: 1.3rem;
+        margin: 0px
+    }
 
+    .phone-buttons {
+        flex-direction: column;
+        gap:0 
+    }
+
+    
+
+    #phone {
+        margin-top: 10px
+    }
 }
 
 @media (max-width: 644px) {
@@ -429,15 +808,51 @@ form button {
         background-position: 65% center;
     }
 
+    .moje-cieplo .container {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .moje-cieplo img {
+        width: 50%;
+    }
+
+    table {
+        overflow: scroll;
+    }
+
+   .navbar {
+       padding: 5px;
+       font-size: 16px;
+   }
+
+   .header .headline-text img {
+       margin-top: 25px;
+       max-width: 200px;
+       
+   }
+
     .contact .container {
         flex-wrap: wrap;
         gap: 50px;
     }
 
-   
+    .headline-text i {
+        font-size: 6rem;
+    }
+
+    .opinions .container .stars .fa{
+        font-size: 12px;
+    }
+
+    .opinions .opinion-card img {
+        max-width: 130px;
+    }
 
     .header .headline-text {
-        margin-top: -55px;
+        margin-top: 50px;
+        padding-top: 25px;
+        flex-direction: column;
     }
 
     .zb-short .container {
@@ -452,15 +867,16 @@ form button {
         box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     }
 
-    .logo {
-        display: none;
+
+    .logo  h2{
+        font-size: 1rem;
     }
 
     .nav a {
         text-align: center;
     }
     .navbar {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .mel-box {
@@ -484,15 +900,29 @@ form button {
 }
 
 @media (max-width: 400px) {
+    .moje-cieplo .container {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .moje-cieplo img {
+        width: 30%;
+    }
     
 }
 
+@media (max-height: 800px) {
 
+    .header .headline-text img {
+        max-width: 200px;
+    }
+}
 
+@media (max-height: 600px) {
 
-
-@media only screen and (max-height: 800px) {
-    
+    .header .headline-text .fa-fan {
+        margin-top: 90px
+    }
 }
 
 @media (max-height: 580px){
@@ -504,7 +934,7 @@ form button {
     }
 
     .headline-text h3 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .header .headline-text {
