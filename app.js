@@ -9,7 +9,7 @@ function dataReady(data) {
     document.querySelector("#short-txt").innerHTML = data.section1;
     document.querySelector(".zbinv").innerHTML = data.section2.p1;
     document.querySelector(".zbinv").innerHTML = data.section2.p1;
-    document.querySelector(".celtext").innerHTML = data.section3.celtext;
+    document.querySelector(".celtext > h4").innerHTML = data.section3.celtext;
     
     
 
